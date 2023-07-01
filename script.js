@@ -12,10 +12,13 @@ async function buscaEndereco(cep){
     let cidade = document.getElementById('cidade')
     let logradouro = document.getElementById('endereco')
     let estado = document.getElementById('estado')
+    let bairro = document.getElementById('bairro')
+    
 
     cidade.value = consultaCEPConvertido.localidade;
     logradouro.value = consultaCEPConvertido.logradouro
     estado.value = consultaCEPConvertido.uf;
+    bairro.value = constaCEPConvertido.bairro
     console.log(consultaCEPConvertido);
     return consultaCEPConvertido;
     }catch(erro){
